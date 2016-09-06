@@ -2,7 +2,14 @@ window.onload = function(){
     var btn = document.getElementById("btn")
     var timer ;
     var isTop = true;
+    var clientHeight = document.documentElement.clientHeight;
         window.onscroll = function(){
+            var sTop = document.body.scrollTop || document.documentElement.scrollTop;
+            if (sTop>=clientHeight){
+                btn.style.display = "block";
+            }else if(sTop<clientHeight){
+                btn.style.display = "none";
+            }
             if (!isTop){
                 clearInterval(timer);
             }

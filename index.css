@@ -9,6 +9,7 @@ div{
     right:30px;
     bottom: 20px;
     background: url("images/top_bg.png");
+    display: none;
 }
 #btn:hover {
     background: url("images/top_bg.png") no-repeat 0 -40px;
