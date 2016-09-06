@@ -7,22 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    <div class="ss">
-        <a href="pageScroll();">返回顶部</a>
-
+    <div>
+        <img src="./images/tb_bg.jpg" alt="bg">
     </div>
-    <script>
-        var scrolldelay;
-        function pageScroll() {
-            window.scrollBy(0, -10);
-            scrolldelay=setTimeout('pageScroll()',100);
-        };
+    <a href="javascript:;" id="btn"></a>
 
-        if(document.documentElement.scrollTop==0){
-            clearTimeout(scrolldelay);
-        }
+    <script>
+
     </script>
 </body>
 </html>
